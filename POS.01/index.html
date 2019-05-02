@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>POS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+    <div class="add">
+        <div class="add__container">
+            <select class="add__type">
+                <option value="inc" selected>+</option>
+                <option value="exp">-</option>
+            </select>
+            <input type="text" class="add__description" placeholder="Add description">
+            <input type="number" class="add__value" placeholder="Value">
+            <button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button>
+        </div>
+    </div>
+
+    <div class="add">
+        <div class="add__conteiner">
+            <!-- <label for="category">Kategoria</label> <br>-->
+            <select name="" id="category" class="add__item" onchange="changeCat('category', 'chosen__category')">
+                <option value="" disabled selected hidden>Wybierz kategorię</option>
+                <option value="01">Pizza</option>
+                <option value="02">Burger</option>
+                <option value="03">Zapiekanki</option>
+                <option value="05">Napoje</option>
+            </select>
+            <select name="" id="chosen__category" class="add__item">
+                <option value="" disabled selected hidden> ----- </option>
+            </select>
+            <select name="" id="chose__size" class="add__item">
+                <option value="35"> 35 cm </option>
+                <option value="45"> 45 cm </option>
+            </select>
+            <select name="" id="sos" class="add__item">
+                <option value="" disabled selected hidden> Dodaj sos </option>
+            </select>
+            <button class="btn btn-danger" onclick="printValue()">Print value</button>
+        </div>
+        <div class="add__conteiner">
+            <!-- <label for="category">Kategoria</label> <br>-->
+            <select name="" id="category" class="add__item" onchange="changeCat('category', 'chosen__category')">
+                <option value="" disabled selected hidden>Wybierz kategorię</option>
+                <option value="01">Pizza</option>
+                <option value="02">Burger</option>
+                <option value="03">Zapiekanki</option>
+                <option value="05">Napoje</option>
+            </select>
+            <select name="" id="chosen__category" class="add__item">
+                <option value="" disabled selected hidden> ----- </option>
+            </select>
+            <select name="" id="chose__size" class="add__item">
+                <option value="35"> 35 cm </option>
+                <option value="45"> 45 cm </option>
+            </select>
+            <select name="" id="sos" class="add__item">
+                <option value="" disabled selected hidden> Dodaj sos </option>
+            </select>
+            <button class="btn btn-danger" onclick="printValue()">Print value</button>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+</body>
+
+</html>
